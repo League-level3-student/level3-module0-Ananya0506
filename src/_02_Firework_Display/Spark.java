@@ -11,7 +11,7 @@ public class Spark {
     public int y;
     public int xVelocity;
     public int yVelocity;
-    public Color color;
+    public  Color color;
 
     public boolean fire = false;
     public boolean dead = false;
