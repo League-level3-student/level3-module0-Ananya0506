@@ -104,4 +104,16 @@ class _02_2DArrayPracticeTest {
         assertTrue(methods.getSouthNeighbor(testMatrix, 2, 0) == null );
         assertTrue(methods.getSouthNeighbor(testMatrix, 0, 2) == 100 );
     }
+    
+    @Test
+    void test_14_grid() {
+        _02_2DArrayPractice methods = new _02_2DArrayPractice();
+        methods.grid();
+    }
+    @Test
+    void test_15_robots() {
+        _02_2DArrayPractice methods = new _02_2DArrayPractice();
+        methods.robots();
+    }
+
 }
