@@ -233,12 +233,19 @@ public class _02_2DArrayPractice {
     }
     
     public Integer getNorthNeighbor(int[][] matrix, int row, int col) {
-        
-        return null;
+    	if (row == matrix[col].length+1) {
+        	return null;
+        } else {
+        	return matrix[col][row-1];
+        }
+    	
     }
     
     public Integer getSouthNeighbor(int[][] matrix, int row, int col) {
-        
-        return null;
+    	  if (row == 0) {
+             	return null;
+             } else {
+             	return matrix[col][row-1];
+             }
     }
 }
