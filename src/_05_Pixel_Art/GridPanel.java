@@ -57,7 +57,7 @@ Pixel [][] pixels;
         // 5. Use the mouseX and mouseY variables to change the color
         //    of the pixel that was clicked. *HINT* Use the pixel's dimensions.
     	
-    		pixels[mouseY/pixelHeight][mouseX/pixelWidth].color = Color.blue; 
+    		pixels[mouseY/pixelHeight][mouseX/pixelWidth].color = this.color; 
     	
     }
 
@@ -68,7 +68,9 @@ Pixel [][] pixels;
 
             for(int j = 0; j < pixels[i].length; j++) {
                g.setColor(pixels[i][j].color);
-                g.drawRect(i, j, pixelWidth, pixelHeight);
+               g.fillRect(j*pixelWidth, i*pixelHeight, pixelWidth, pixelHeight);
+               g.setColor(Color.LIGHT_GRAY);
+               g.drawRect(j*pixelWidth, i*pixelHeight, pixelWidth, pixelHeight);
             }
         }
         //    For every pixel in the list, fill in a rectangle using the pixel's color.
